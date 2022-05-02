@@ -26,6 +26,9 @@ public class MuseumArFragment extends ArFragment {
         Bitmap img = BitmapFactory.decodeResource(getResources(), R.drawable.pic1);
         aid.addImage("pic1", img);
 
+        Bitmap img2 = BitmapFactory.decodeResource(getResources(), R.drawable.pic2);
+        aid.addImage("pic2", img2);
+
         config.setAugmentedImageDatabase(aid);
 
         this.getArSceneView().setupSession(session);
@@ -38,6 +41,7 @@ public class MuseumArFragment extends ArFragment {
 
         getPlaneDiscoveryController().hide();
         getPlaneDiscoveryController().setInstructionView(null);
+
 
         return frameLayout;
     }
