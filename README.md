@@ -6,7 +6,7 @@ The application was built using Google's ARCore SDK and OpenCV's Java SDK, versi
 
 The user can choose specific images to scan in order to play videos over them. This concept of Augmented Images was implemented with the help of Google's ARCore library.
 
-The user has the ability to view information about the art piece, play the video once the image is detected, pause it, and also record a souvenir of the augmented experience.
+The user has the ability to view information about the art piece, play the video once the image is detected, pause it, and also record a souvenir of the augmented experience, with the help of Google's VideoRecorder functionality.
 
 ## Necessary pre-requisites
 
