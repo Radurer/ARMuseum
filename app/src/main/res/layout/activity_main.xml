@@ -4,13 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/museumArFragment"
         android:name="com.example.dissertation2022.MuseumArFragment" />
+
+    <Button
+        android:id="@+id/playPauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="84dp"
+        android:text="Play"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/museumArFragment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="84dp"
+        android:text="Exit"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/museumArFragment"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/recordingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Start Recording"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/museumArFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="INFO"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/recordingButton"
+        app:layout_constraintEnd_toStartOf="@+id/exitButton"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/playPauseButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
